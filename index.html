@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Math.random() Practice</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <style type="text/css">
+        select.correct {
+            background-color: #ccffcc;
+        }
+
+        select.incorrect {
+            background-color: #ffc2b3;
+        }
+
+        select.form-control {
+            max-width: 150px;
+        }
+
+        .hidden {
+            display: none;
+        }
+        .question-correct {
+            color: #00cc00;
+            font-weight: bold;
+            font-size: 150%;
+        }
+        .question-incorrect {
+            color: #cc0000;
+            font-weight: bold;
+            font-size: 150%; 
+        }
+        #question {
+            line-height: 2;
+            font-size: 175%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container py-4">
+        <h2 id="java-mathrandom-practice-problems">Java Math.random() Practice Problems</h2>
+        <p>Here's some randomly generated practice problem for you to practice working with <code
+                class="highlighter-rouge">Math.random()</code>. For each you’ll see a description of the problem, a code
+            snippet, and a field to enter your answer. There is also a button to check your answer and another to
+            generate a new problem. When you click the Check Answer button it will tell you whether your answer is
+            correct and also give you a short explanation of how to find the correct answer.</p>
+        <p>The problems are randomly generated every time you click New Question, so there’s plenty of practice for you
+            to do to bump up your confidence.</p>
+        <hr />
+        <div class="pt-8 pb-4" id="question"></div>
+        <div class="py-4" id="wrap-answer">
+            <input type="text" id="answer" class="input input-bordered max-w-xs w-full" />
+        </div>
+        <button class="btn btn-primary" id="check">Check Answer</button>
+        <button class="btn btn-secondary" id="refresh">New Question</button>
+        <div class="py-4 font-bold" id="results">Results</div>
+        <div class="py-4" id="explanation">Explanation</div>
+    </div>
+    <script src="./random.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', () => { rnd.init(); });</script>
+    </div>
+</body>
+
+</html>
